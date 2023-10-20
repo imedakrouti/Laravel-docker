@@ -1,0 +1,84 @@
+.btn.btn-outline-primary {
+  
+  border-color: #6666FF;
+  outline-color: #6666FF;
+  color: #6666FF;
+}
+.btn.btn-outline-primary:hover {
+  background-color: #6666FF;
+  border-color: #6666FF;
+  outline-color: #6666FF;
+  color: #ffffff; 
+}
+
+
+.page-link {
+  border-color: #6666FF;
+  outline-color: #6666FF;
+  color: #6666FF;
+}
+.page-item.active .page-link,
+.page-item.active .page-link:focus {
+  background-color: #6666FF;
+  border-color: #6666FF;
+  outline-color: #6666FF;
+  color: #ffffff; 
+}
+#generateButtoncc {
+    margin-top: 5px;
+    padding: 2px 4px;
+    background-color: #6666FF;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #generateButtoncc:hover {
+    background-color: #6666FF;
+  }
+  
+  #generateButtoncc:focus {
+    outline: none;
+  }
+
+
+
+  #generateButtonc {
+    margin-top: 5px;
+    padding: 2px 4px;
+    background-color: #6666FF;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #generateButtonc:hover {
+    background-color: #6666FF;
+  }
+  
+  #generateButtonc:focus {
+    outline: none;
+  }
+
+  #generateButton {
+    margin-top: 5px;
+    padding: 2px 4px;
+    background-color: #6666FF;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #generateButton:hover {
+    background-color: #6666FF;
+  }
+  
+  #generateButton:focus {
+    outline: none;
+  }

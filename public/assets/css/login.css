@@ -1,0 +1,74 @@
+.login-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: linear-gradient(135deg, #6666FF 50%, #64D7C1 50%);
+  }
+  
+  #gradient-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #6666FF 50%, #64D7C1 50%);
+    z-index: 9999;
+    animation: gradient-fill 1.5s cubic-bezier(0.5, 0, 0, 1) forwards;
+    pointer-events: none;
+  }
+  
+  
+  @keyframes gradient-fill {
+    0% {
+      background-size: 200% 200%;
+      background-position: top left;
+    }
+    100% {
+      background-size: 100% 100%;
+      background-position: bottom right;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .login-box {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  .login-box.show {
+    animation: fade-in 0.8s ease-in-out forwards;
+  }
+  
+  .login-box .card-header {
+    text-align: center;
+  }
+  .login-box .card-header img {
+    width: 200px;
+  }
+  
+  
+  .login-box .login-box-msg {
+    text-align: center;
+  }
+  
+  .login-box .btn-login {
+    background-color: #64D7C1;
+    color: #FFF9FA;
+  }
+  
+  .btn.btn-xxxx  {
+    background-color:#64D7C1;
+    color:#FFF9FA;
+
+    }
+    .card-info {
+color:#6666FF;
+    }

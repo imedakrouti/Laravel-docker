@@ -1,0 +1,92 @@
+/* Add custom CSS styles for cards and modal */
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #f9c2ff,
+    #f9c2ff 5px,
+    #f0e68c 5px,
+    #f0e68c 10px
+  ); /* Customize the colors for the little squares */
+  z-index: -1;
+}
+
+.card .card-body {
+  padding: 20px;
+}
+
+/* Customize colors for card headings and text */
+.card-title {
+  color: #ffebea; /* White card heading color */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #fff9fa; /* Card text color */
+  font-size: 12px;
+}
+
+/* Add colors for card statistics */
+.card-statistic1 {
+  background-color: #17a2b8; /* Blue */
+}
+
+.card-statistic2 {
+  background-color: #28a745; /* Green */
+}
+.container {
+  margin-top: 20px;
+}
+
+table {
+  margin-bottom: 20px;
+}
+
+.col-md-6 {
+  float: left;
+  width: 60%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.col-md-12 {
+  clear: both;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 768px) {
+  .col-md-6 {
+    width: 100%;
+  }
+}
+
+.page-link {
+  border-color: #6666ff;
+  outline-color: #6666ff;
+  color: #6666ff;
+}
+.page-item.active .page-link,
+.page-item.active .page-link:focus {
+  background-color: #6666ff;
+  border-color: #6666ff;
+  outline-color: #6666ff;
+  color: #ffffff;
+}

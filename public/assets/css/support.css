@@ -1,0 +1,54 @@
+
+.modal1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.25s, opacity 0.25s;
+}
+
+/* Style for the modal content */
+.modal-content {
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    margin: 50px auto;
+    /* Adjust the margin value as needed */
+}
+
+/* Style for the close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.view-more {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.btn.btn-outline-primary {
+  
+    border-color: #6666FF;
+    outline-color: #6666FF;
+    color: #6666FF;
+  }
+  .btn.btn-outline-primary:hover {
+    background-color: #6666FF;
+    border-color: #6666FF;
+    outline-color: #6666FF;
+    color: #ffffff; 
+  }
+  

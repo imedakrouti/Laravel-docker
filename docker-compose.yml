@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+
+  # Web Server Service
+  nginx:
+    image: nginx:alpine
+    container_name: nginx-laravel-test
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+    depends_on:
+      - app
+      - db
+
+  # Application Service
+  app:
+    container_name: rules-profiles-managements-test
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/var/www
+    ports:
+      - "9000:9000"
+    working_dir: /var/www
+
+  # Database Service (MySQL)
+  db:
+    image: mysql:8.0
+    container_name: Database
+    environment:
+      MYSQL_DATABASE: "${DB_DATABASE}"
+      MYSQL_ROOT_PASSWORD: "${DB_PASSWORD}"
+    volumes:
+      - db:/var/lib/mysql
+    ports:
+      - 3306:3306
+
+  # PHPMyAdmin Service
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: PhpMyAdmin
+    links:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 8081:80
+
+  # MailPit Service
+  mailpit:
+    image: axllent/mailpit
+    container_name: MailPit
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+
+volumes:
+  db:

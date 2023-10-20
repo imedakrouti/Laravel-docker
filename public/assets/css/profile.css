@@ -1,0 +1,37 @@
+.user-image{
+        width: 180px;
+        height: 180px;
+        background: #ececec;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+}
+.rounded-icon{
+    width: 30px;
+    height: 30px;
+    line-height: 30px !important;
+    border-radius: 50%;
+    border:1px solid #3498db;
+  }
+  .rounded-icon:hover{
+        background: #3498db !important ;
+  }
+  .btn.btn-outline-primary {
+  
+      border-color: #6666FF;
+      outline-color: #6666FF;
+      color: #6666FF;
+    }
+    .btn.btn-outline-primary:hover {
+      background-color: #6666FF;
+      border-color: #6666FF;
+      outline-color: #6666FF;
+      color: #ffffff; 
+    }
+    .profile-link{
+      font-size:22px;
+      color:#0056b3 !important;
+
+    }

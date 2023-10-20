@@ -1,0 +1,19 @@
+.sidebar span{
+
+    font-family: 'Soucesans3';
+}
+@font-face {
+    font-family: 'Soucesans3';
+    src: url('../fonts/SourceSans3-Medium.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'FuturaPT';
+    src: url('../fonts/SourceSans3-Regular.ttf') format('truetype'); 
+
+  }
+  .sidebar a{
+
+    font-family: 'FuturaPT';
+}
+

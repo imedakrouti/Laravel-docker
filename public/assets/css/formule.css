@@ -1,0 +1,5 @@
+/* CSS personnalisé pour le défilement du contenu du modal */
+.modal-body {
+  max-height: 60vh; /* Ajustez la valeur en fonction de vos besoins */
+  overflow-y: auto;
+}

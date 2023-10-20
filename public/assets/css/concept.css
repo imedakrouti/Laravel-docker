@@ -1,0 +1,45 @@
+.container {
+  margin-top: 20px;
+}
+
+table {
+  margin-bottom: 20px;
+}
+
+.col-md-6 {
+  float: left;
+  width: 60%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.col-md-12 {
+  clear: both;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 768px) {
+  .col-md-6 {
+    width: 100%;
+  }
+}
+
+.page-link {
+  border-color: #6666ff;
+  outline-color: #6666ff;
+  color: #6666ff;
+}
+.page-item.active .page-link,
+.page-item.active .page-link:focus {
+  background-color: #6666ff;
+  border-color: #6666ff;
+  outline-color: #6666ff;
+  color: #ffffff;
+}
